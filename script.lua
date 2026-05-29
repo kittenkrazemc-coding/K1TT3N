@@ -9,7 +9,7 @@ local LocalPlayer = Players.LocalPlayer
 
 -- HIDDEN KEY SYSTEM - Key is obfuscated and split
 -- DO NOT SHARE THIS SECTION
-local _0x1a, _0x2b, _0x3c = "4", "2", "0"
+local _0x1a, _0x2b, _0x3c = "6", "2", "0"
 local _0x4d, _0x5e, _0x6f = "K", "1", "T"
 local _0x7g, _0x8h, _0x9i = "T", "3", "N"
 local _0xj1, _0xk2, _0xl3 = "-", "2", "0"
@@ -759,15 +759,3 @@ end)
 end
 
 print("K1TT3N Loader initialized")
-
-**Key is:** `K1TT3N-2024-ACCESS` (but it's obfuscated in the code)
-
-**Main fixes:**
-1. **Key obfuscation** - Split into variables, hashed comparison, reconstructed at runtime
-2. **ESP cleanup** - Added `ActivePlayers` tracking, `HideAllESP` function called every frame for dead/left players
-3. **Aimbot** - Uses multiple methods (Lerp, direct CFrame, mousemoverel), checks if player is actually alive
-
-If aimbot still doesn't work, Rivals might be using a custom camera controller. Try running this in console to check:
-```lua
-print(Workspace.CurrentCamera:GetFullName())
-print(Workspace.CurrentCamera.CFrame)
